@@ -1995,27 +1995,27 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #d2e6ec;
-  --bs-table-striped-bg: #c8dbe0;
+  --bs-table-bg: #fff4cc;
+  --bs-table-striped-bg: #f2e8c2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #bdcfd4;
+  --bs-table-active-bg: #e6dcb8;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #c2d5da;
+  --bs-table-hover-bg: #ece2bd;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #bdcfd4;
+  border-color: #e6dcb8;
 }
 
 .table-secondary {
-  --bs-table-bg: #fbf1cd;
-  --bs-table-striped-bg: #eee5c3;
+  --bs-table-bg: #e2e3e5;
+  --bs-table-striped-bg: #d7d8da;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e2d9b9;
-  --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e8dfbe;
-  --bs-table-hover-color: #000;
+  --bs-table-active-bg: #cbccce;
+  --bs-table-active-color: #fff;
+  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-color: #fff;
   color: #000;
-  border-color: #e2d9b9;
+  border-color: #cbccce;
 }
 
 .table-success {
@@ -2023,9 +2023,9 @@ progress {
   --bs-table-striped-bg: #c7dbd2;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #bcd0c7;
-  --bs-table-active-color: #000;
+  --bs-table-active-color: #fff;
   --bs-table-hover-bg: #c1d6cc;
-  --bs-table-hover-color: #000;
+  --bs-table-hover-color: #fff;
   color: #000;
   border-color: #bcd0c7;
 }
@@ -2043,15 +2043,15 @@ progress {
 }
 
 .table-warning {
-  --bs-table-bg: #fbf1cd;
-  --bs-table-striped-bg: #eee5c3;
+  --bs-table-bg: #fff4cc;
+  --bs-table-striped-bg: #f2e8c2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e2d9b9;
+  --bs-table-active-bg: #e6dcb8;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e8dfbe;
+  --bs-table-hover-bg: #ece2bd;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #e2d9b9;
+  border-color: #e6dcb8;
 }
 
 .table-danger {
@@ -2059,9 +2059,9 @@ progress {
   --bs-table-striped-bg: #eccccf;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #dfc2c4;
-  --bs-table-active-color: #000;
+  --bs-table-active-color: #fff;
   --bs-table-hover-bg: #e5c7ca;
-  --bs-table-hover-color: #000;
+  --bs-table-hover-color: #fff;
   color: #000;
   border-color: #dfc2c4;
 }
@@ -2186,9 +2186,9 @@ progress {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #8ec0cf;
+  border-color: #ffe480;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(29, 128, 159, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -2366,9 +2366,9 @@ textarea.form-control-lg {
   }
 }
 .form-select:focus {
-  border-color: #8ec0cf;
+  border-color: #ffe480;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(29, 128, 159, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;
@@ -2433,13 +2433,13 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #8ec0cf;
+  border-color: #ffe480;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(29, 128, 159, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
 }
 .form-check-input:checked {
-  background-color: #1D809F;
-  border-color: #1D809F;
+  background-color: #ffc800;
+  border-color: #ffc800;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
@@ -2448,8 +2448,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #1D809F;
-  border-color: #1D809F;
+  background-color: #ffc800;
+  border-color: #ffc800;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2478,7 +2478,7 @@ textarea.form-control-lg {
   }
 }
 .form-switch .form-check-input:focus {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%238ec0cf'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ffe480'/%3e%3c/svg%3e");
 }
 .form-switch .form-check-input:checked {
   background-position: right center;
@@ -2514,10 +2514,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(29, 128, 159, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(29, 128, 159, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2526,7 +2526,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #6A2E75;
+  background-color: #ffc800;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2541,7 +2541,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-webkit-slider-thumb:active {
-  background-color: #bbd9e2;
+  background-color: #ffefb3;
 }
 .form-range::-webkit-slider-runnable-track {
   width: 100%;
@@ -2555,7 +2555,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #6A2E75;
+  background-color: #ffc800;
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2570,7 +2570,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-moz-range-thumb:active {
-  background-color: #bbd9e2;
+  background-color: #ffefb3;
 }
 .form-range::-moz-range-track {
   width: 100%;
@@ -10983,20 +10983,6 @@ html {
   padding: 1.25rem 2.5rem;
 }
 
-.callout {
-  padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.callout h2, .callout .h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  display: block;
-  max-width: 30rem;
-}
-
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -11109,6 +11095,62 @@ footer.footer .social-link:hover {
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
   }
+}
+
+/* Contact */
+
+section#contact {
+  background-color: #212529;
+  background-image: url("../assets/img/bg-callout.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#contact .section-heading {
+  color: #fff;
+}
+section#contact form#contactForm .form-group {
+  margin-bottom: 1.5rem;
+}
+section#contact form#contactForm .form-group input,
+section#contact form#contactForm .form-group textarea {
+  padding: 1.25rem;
+}
+section#contact form#contactForm .form-group input.form-control {
+  height: auto;
+}
+section#contact form#contactForm .form-group-textarea {
+  height: 100%;
+}
+section#contact form#contactForm .form-group-textarea textarea {
+  height: 100%;
+  min-height: 10rem;
+}
+section#contact form#contactForm p.help-block {
+  margin: 0;
+}
+section#contact form#contactForm .form-control:focus {
+  border-color: #ffc800;
+  box-shadow: none;
+}
+section#contact form#contactForm ::-webkit-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm :-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm ::-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm :-ms-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
 }
 
 .service-icon {
