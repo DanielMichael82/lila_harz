@@ -27,6 +27,9 @@
     </div>
 </section>
 <!--Team-->
+
+{% for owner in lilaharz %}
+
 <section class="content-section" id="team-member">
     <div class="container px-4 px-lg-5 text-center">
         <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -36,27 +39,18 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle image-fluid" src="static/assets/img/1.jpg" alt="..." />
-                        <h4>Remi Collins</h4>
-                        <p class="text-muted">Director</p>
+                        <img class="mx-auto rounded-circle image-fluid" src="{{ owner.image_source }}" alt="..." />
+                        <h4>{{ owner.name }}</h4>
+                        <p class="text-muted">{{ owner.role }}</p>
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto text-center">
+                                <p class="lead mb-5">{{ owner.description }}
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="lead mb-5">Remi began making resin products having been sat feeling unproductive and
-                        fed up with the Covid-19 pandemic.
-                        A new hobby was needed after many failed attempts at finding a muse, including guitar (my poor
-                        neighbours).
-                        She first stumbled across resin on Instagram and began to research a list of products that were
-                        needed.
-                        When payday came around, Remi purchased the basics and the first cake stand was created!
-                        The reaction on her social media was really positive, therefore, she decided to really give
-                        resin a go!
-                        8 months later and here we are. Lila Harz now has many products from coasters to tables.</p>
-                </div>
-            </div>
-        </div>
+
+{% endfor %}
+
 </section>
 
 <!-- Testimonials -->
