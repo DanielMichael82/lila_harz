@@ -3,55 +3,55 @@
 <!-- Hero Image -->
 <header class="masthead d-flex align-items-center">
     <div class="container px-4 px-lg-5 text-center">
-        <h1 class="mb-1">Lila Harz</h1>
-        <h3 class="mb-5"><em>Handcrafted Resin Homeware</em></h3>
-        <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+        <div class="team-member">
+            <img src="https://imagizer.imageshack.com/v2/320x240q90/924/Dg8shx.jpg" alt="Company Logo" class="mx-auto rounded-circle image-fluid">
+        </div>
+        <h2 class="mb-5"><em>Handcrafted Resin Homeware</em></h2>
     </div>
 </header>
 <!-- About-->
+{% for about in lilaharz %}
 <section class="content-section" id="about">
     <div class="container px-4 px-lg-5 text-center">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-10">
-                <h2>About Us</h2>
-                <p class="lead mb-5">
-                    Lila Harz is a small business specialising in handmade resin products based in Liverpool, UK.
-                    Lila Harz was launched in 2020, and has continued to gain a following, eventually operating from a
-                    studio in Liverpool’s Creative Hub, The Baltic Triangle.
-                    Each product is made with the upmost precision to provide that luxurious and exclusive feel.
-                    Resin is a beautiful art with many finishes and colours that add an exquisite feel to any home.
-                </p>
-                <a class="btn btn-dark btn-xl" href="{{ url_for('collections') }}">What We Offer</a>
+            <h2 class="section-heading text-uppercase">{{ about.about }}</h2>
+            <div class="col-lg-12">
+                <div class="team-member">
+                    <img src="{{ about.image_source }}" alt="" class="mx-auto rounded-circle image-fluid">
+                    <p class="lead mb-5">{{ about.about_description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+<!--Team-->
+
+<section class="page-section" id="team">
+    <div class="container px-4 px-lg-5 text-center">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle image-fluid"
+                        src="https://imagizer.imageshack.com/v2/320x240q90/922/CgCb9B.jpg" alt="..." />
+                    <h2 class="section-heading">Remi Collins</h2>
+                    <p class="text-muted">Director</p>
+                    <p class="lead mb-5"> Remi began making resin products having been sat feeling unproductive and fed
+                        up with the Covid-19 pandemic.
+                        A new hobby was needed after many failed attempts at finding a muse, including guitar (my poor
+                        neighbours).
+                        She first stumbled across resin on Instagram and began to research a list of products that were
+                        needed.
+                        When payday came around, Remi purchased the basics and the first cake stand was created! The
+                        reaction on her social media was really positive, therefore,
+                        she decided to really give resin a go! 8 months later and here we are. Lila Harz now has many
+                        products from coasters to tables.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!--Team-->
 
-{% for owner in lilaharz %}
-
-<section class="content-section" id="team-member">
-    <div class="container px-4 px-lg-5 text-center">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-10">
-                <h2 class="section-heading text-uppercase">Meet Remi</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle image-fluid" src="{{ owner.image_source }}" alt="..." />
-                        <h4>{{ owner.name }}</h4>
-                        <p class="text-muted">{{ owner.role }}</p>
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto text-center">
-                                <p class="lead mb-5">{{ owner.description }}
-                    </div>
-                </div>
-            </div>
-
-{% endfor %}
-
-</section>
 
 <!-- Testimonials -->
 {% endblock %}

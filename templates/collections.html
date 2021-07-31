@@ -3,80 +3,30 @@
 <!-- Hero Image -->
 <header class="masthead d-flex align-items-center">
     <div class="container px-4 px-lg-5 text-center">
-        <h1 class="mb-1">Lila Harz</h1>
-        <h3 class="mb-5"><em>Collections</em></h3>
+        <div class="team-member">
+            <img src="https://imagizer.imageshack.com/v2/320x240q90/924/Dg8shx.jpg" alt="Company Logo" class="mx-auto rounded-circle image-fluid">
+        </div>
+        <h2 class="mb-5"><em>Collections</em></h2>
     </div>
 </header>
-    <section class="content-section" id="portfolio">
-        <div class="container px-4 px-lg-5">
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="bookmarks.html">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Book Marks</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="static/assets/img/portfolio-1.jpg" alt="..." />
-                        </a>
+{% for product in products %}
+<section class="content-section" id="portfolio">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-0">
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#!">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <div class="h2">{{ product.product_name }}</div>
+                            <p class="mb-0">{{ product.description }}</p>
+                            {{ product.price }} + P&P
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Cake Stands</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="static/assets/img/portfolio-2.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Clocks</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="static/assets/img/portfolio-3.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Coasters</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="static/assets/img/portfolio-4.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Jewellery Trays</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="static/assets/img/portfolio-5.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Trays</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="static/assets/img/portfolio-6.jpg" alt="..." />
-                        </a>
-                    </div>
-                </div>
+                    <img class="img-fluid" src="{{ product.image_source }}" alt="Resin Bookmark" />
+                </a>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+{% endfor %}
 {% endblock %}

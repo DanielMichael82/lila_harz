@@ -1,8 +1,7 @@
 [
-     {
-         "name": "Remi Collins",
-         "role": "Director",
-         "description": "Remi began making resin products having been sat feeling unproductive and fed up with the Covid-19 pandemic. A new hobby was needed after many failed attempts at finding a muse, including guitar (my poor neighbours). She first stumbled across resin on Instagram and began to research a list of products that were needed. When payday came around, Remi purchased the basics and the first cake stand was created! The reaction on her social media was really positive, therefore, she decided to really give resin a go! 8 months later and here we are. Lila Harz now has many products from coasters to tables.",
-         "image_source": "static/assets/img/1.jpg"
-     }
+    {
+        "about": "About Us",
+        "about_description": "Lila Harz is a small business specialising in handmade resin products based in Liverpool UK. Lila Harz was launched in 2020 and has continued to gain a following, eventually operating from a studio in Liverpools Creative Hub The Baltic Triangle. Each product is made with the upmost precision to provide that luxurious and exclusive feel. Resin is a beautiful art with many finishes and colours that add an exquisite feel to any home.",
+        "image_source": "https://imagizer.imageshack.com/v2/320x240q90/924/Dg8shx.jpg"
+    }
 ]

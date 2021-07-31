@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Image -->
+<header class="masthead d-flex align-items-center">
+    <div class="container px-4 px-lg-5 text-center">
+        <div class="team-member">
+            <img src="https://imagizer.imageshack.com/v2/320x240q90/924/Dg8shx.jpg" alt="Company Logo"
+                class="mx-auto rounded-circle image-fluid">
+        </div>
+        {{ username }}'s Profile
+    </div>
+</header>
+
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">My Wish List</h5>
+                        <p class="card-text">We know there is so much to choose from, have a think and come back to your
+                            wish list.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
